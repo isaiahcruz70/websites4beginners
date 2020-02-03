@@ -1,0 +1,182 @@
+/* margin auto centers block level elements
+font-family: 'Playfair Display', serif;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Bangers', cursive; */
+
+@import url('https://fonts.googleapis.com/css?family=Bangers|Fira+Sans|Playfair+Display&display=swap');
+
+p {
+    font-family: 'Bangers', cursive;
+}
+
+h1, h2, h3 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    width: 100%;
+    /* height: 80px; */
+    background-color: aquamarine;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center; 
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ul {
+    display: flex;
+    /* justify-content: flex-end; */
+    /* margin-right: 50px; */
+/* } */
+
+li {
+    width: 70px;
+    background-color: blueviolet;
+    border-radius: 45px;
+    border: solid 2px blue;
+    text-align: center;
+    color: crimson;
+    margin-right: 10px;
+}
+
+.list-items {
+    display: inline-block;
+}
+
+li::hover {
+    background-color: crimson;
+    color: cyan;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    position: absolute;
+    color: aquamarine;
+    margin-top: 100px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+}
+
+.home-text1 {
+    text-align: center;
+}
+
+.home-text2 {
+    text-align: center;
+}
+
+.section__space {
+    height: 300;
+    width: 400px;
+    margin-top: 190px;
+}
+
+.hero-img {
+    height: 400px;
+    width: 800px;
+}
+
+.home-img {
+    height: 300px;
+    width: 400px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+/* --------------------------about page ----------------------------------------------------------- */
+
+.aside {
+    height: 500px;
+    width: 300px;
+}
+
+.center {
+    text-align: center;
+    
+}
+
+body { 
+    animation: fadeInAnimation ease 3s 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+}
+
+/* -------------------------- Contact Form -------------------------------------- */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: rgb(201, 32, 181);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker pink color */
+  input[type=submit]:hover {
+    background-color: #b928b9;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
